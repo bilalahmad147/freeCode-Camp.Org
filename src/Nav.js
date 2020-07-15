@@ -21,7 +21,7 @@ export default function Nav() {
                 <Link to="/">Home</Link>
                 </li>
                 <li>
-                <Link to="/cart">Cart</Link>
+                <Link to="/cart">Cart Detail</Link>
                 </li>
             </ul>
             </nav>
