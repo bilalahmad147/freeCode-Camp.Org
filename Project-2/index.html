@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="title">Survey Form</h1>
+<div id="form-outer">
+  <p id="description">Let me know how I can improve my blog!</p>
+  <form id="survey-form" method="https://crossorigin.me/https://freecodecamp.com">
+    <div class="rowTab"><div class="labels"><label id="name-label" for="name">* Name: </label>
+      </div>
+     <div class="rightTab"> <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels"><label id="email-label" for="email"> * Email: </label></div>
+      <div class="rightTab">
+        <input type="email" name="email" id="email" class="input-field" required placeholder="Enter your email"></div>
+    </div>
+  
+    <div class="rowTab"><div class="labels"><label id="number-label" for "age"> * Age:</label></div>
+      <div class="rightTab"> <input type="number" name="age" id="number" min="1" max="100" class="input-field" placeholder="Age"></div>
+    </div>
+      
+      <div class="rowTab"><div class="labels"><label for="currentPos">What do you like about my blog?</label>
+        </div>
+   
+      <div class"rightTab"><select id="dropdown" name="currentPos" class="dropdown"><option disabled value>Select an option</option>
+        <option value="makeup-tutorials">Makeup Tutorials</option>
+        <option value="dating">Dating Stories</option>
+        <option value="style">Style Tips</option>
+        <option value="other">Other</option>
+        </select>
+      </div>
+    </div>
+    
+  <div class="rowTab"><div class="labels"><label for="userRating"> * How likely are you to recommend my blog, Makeup Bitch, to a friend?</label></div>
+    <div class="rightTab">
+      <ul style="list-style:none;">
+      <li class="radio"><label>Definitely<input name="radio-buttons" value="1" type="radio" class="userRatings"></label></li>
+      <li class="radio"><label>Maybe<input name="radio-buttons" value="2" type="radio" class="userRatings"></label></li>
+      <li class="radio"><label>Not Sure<input name="radio-buttons" value="3" type="radio" class="userRatings"></label></li>
+      </ul>
+    </div>
+      </div>
+     
+  <div class="rowTab"><div class="labels"><label for="most-like">What do you like most about Makeup Bitch?</label></div>
+    <div class="rightTab"><select id="most-like" name="mostLike" class="dropdown"><option disabled selected value>Select an option</option>
+      <option value="honesty"> Honest Stories</option>
+      <option value="makeup">Makeup Reviews</option>
+      <option value="hair">Hair-Care Tips</options>
+      <option value="Website">Overall Website Style</option>
+      </select>
+      </div>
+    </div>
+    
+  <div class="rowTab"><div class="labels"><labels for="preferences">Things that I can improve on in the future<br>(Check all that apply):</label>
+    </div>
+    
+    <div class="rightTab"><ul id="preferences" style="list-style: none;">
+      <li class="checkbox"><label><input name="prefer" value="1" type="checkbox" class="userRatings"> Higher Quality Pictures</label></li>
+      <li class="checkbox"><label><input name="prefer" value="2" type="checkbox" class="userRatings"> More Opinion Posts</label></li>
+      <li class="checkbox"><label><input name="prefer" value="3" type="checkbox" class="userRatings"> More Makeup Reviews</label></li>
+        <li class="checkbox"><label><input name="prefer" value="4" type="checkbox" class="userRatings"> Guest Author/Collaborations</label></li>
+      <li class="checkbox"><label><input name="prefer" value="5" type="checkbox" class="userRatings"> Videos</label></li>
+      <li class="checkbox"><label><input name="prefer" value="6" type="checkbox" class="userRatings"> Social Media Connections</label></li>
+      </ul>
+    </div>
+    </div>
+    
+    <div class="rowTab"><div class="labels"><label for="comments">Any Comments or Suggestions?</label>
+      </div>
+      <div class="rightTab"><textarea id="comments" class="input-field" style="height:40px;resize:vertical;" name="comment" placeholder="Enter your comment here..."></textarea>
+      </div>
+    </div>
+    <button id="submit" type="submit">Submit</button>
+  </form>
+</div>
+
+</body>
+</html>
