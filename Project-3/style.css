@@ -1,0 +1,236 @@
+body {
+  background: linear-gradient(75deg, #c0c0c0, #ffb499);
+  margin: 0px;
+  font-family: "Open Sans", sans-serif;
+}
+#image {
+  display: flex;
+  flex-flow: row wrap;
+  flex: 1;
+}
+#image > div {
+  background-color: hsl(0, 0%, 80%);
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  justify-content: flex-start;
+}
+#image > div > img {
+  max-height: 100px;
+  max-width: 100px;
+}
+#container {
+  display: flex;
+  flex-flow: column wrap;
+}
+#main-body {
+  width: 100%;
+  margin: auto;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+a {
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+  text-decoration: none;
+}
+a:hover {
+  animation-name: color-change-nav;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+}
+#features-anchor {
+  margin-bottom: 100px;
+}
+#header {
+  width: 100%;
+  position: fixed;
+  background-color: hsl(240, 1%, 20%);
+  color: #fff;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+#header > div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+#header > div > nav {
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+}
+#feature-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+.features {
+  margin: 0px 20px 50px 20px;
+  width: 300px;
+  margin-bottom: 100px;
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: center;
+  text-align: center;
+}
+.features > p {
+  width: 100%;
+}
+.features > h3 {
+  width: 100%;
+  border-bottom: 2px solid hsl(35, 100%, 60%);
+  background-color: hsl(0, 0%, 90%);
+}
+#video-wrapper {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+#button-container {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+}
+#submit {
+  background-color: hsl(196, 100%, 47%);
+  border: 1px solid hsl(196, 100%, 47%);
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: "Open Sans", sans-serif;
+}
+#submit:hover {
+  animation-name: color-change-cyan;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+button {
+  background-color: hsl(35, 100%, 60%);
+  border: 1px solid hsl(35, 100%, 60%);
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+}
+button:hover {
+  animation-name: color-change-orange;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+#info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 100px;
+}
+#video-wrapper > div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+#models {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+.model-class {
+  width: 300px;
+  min-width: 100px;
+  background-color: #fff;
+  margin: 0px 20px 0px 20px;
+  border: 1px solid black;
+
+  flex-wrap: wrap;
+  justify-content: space-around;
+  flex: 1;
+}
+.model-name {
+  width: 100%;
+  background-color: hsl(0, 0%, 80%);
+  border-bottom: 1px solid black;
+  display: flex;
+  justify-content: center;
+}
+.model-description {
+  display: flex;
+  line-height: 40px;
+  justify-content: center;
+}
+footer {
+  width: 100%;
+  height: 45px;
+  background-color: hsl(240, 1%, 20%);
+  display: flex;
+  align-items: center;
+}
+footer > div {
+  width: 100%;
+}
+footer > div > nav {
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+}
+footer > div > nav > a {
+  border-right: 2px solid hsla(240, 1%, 25%, 1);
+  margin-right: 5px;
+}
+#signature {
+  width: 100%;
+  margin-right: 10px;
+  display: flex;
+  color: #fff;
+  flex-direction: row;
+  font-size: 0.8em;
+  justify-content: flex-end;
+}
+@keyframes color-change-orange {
+  100% {
+    background-color: hsl(35, 100%, 50%);
+  }
+}
+@keyframes color-change-cyan {
+  100% {
+    background-color: hsl(177, 100%, 47%);
+    border-color: hsl(177, 100%, 47%);
+  }
+}
+@keyframes color-change-nav {
+  100% {
+    background-color: hsl(240, 1%, 25%);
+  }
+}
+@media (max-width: 1000px) {
+  .model-class {
+    min-width: 300px;
+    max-width: 300px;
+    margin-top: 20px;
+  }
+  footer > div > nav {
+    width: 60%;
+  }
+  #header > div > nav {
+    width: 100%;
+  }
+}
+@media (max-width: 700px) {
+  .model-class {
+    margin-top: 20px;
+  }
+  footer > div > nav {
+    width: 80%;
+  }
+}
+@media (max-width: 500px) {
+  footer > div > nav {
+    width: 100%;
+  }
+}
