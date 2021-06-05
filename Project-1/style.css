@@ -1,0 +1,17 @@
+#main {
+  text-align: center;
+  background-color: whitesmoke;
+}
+#tribute-info {
+  width: 50%;
+  margin: 0 auto;
+  line-height: 2em;
+}
+#tribute-info > ul {
+  text-align-last: left;
+}
+#img-div {
+  width: 90%;
+  margin: 0 auto;
+  background-color: white;
+}
