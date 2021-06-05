@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <input type="checkbox" id="nav-hamburger">
+  <label for="nav-hamburger" class="button--hamburger">	&#9776;</label>
+
+<nav id="navbar">  
+  <header> 
+    <h1> Lovely things I find make things better</h1>
+  </header>
+ <div class="link-container">
+   <a class="nav-link" href="#Intro" onclick= "hideNav()">Intro</a>
+   <a class="nav-link" href="#Movement" onclick= "hideNav()">Movement</a>
+   <a class="nav-link" href="#Music" onclick= "hideNav()">Music</a>
+<a class="nav-link" href="#Play" onclick= "hideNav()">Play</a>
+  <a class="nav-link" href="#People" onclick= "hideNav()">People</a>
+   <a class="nav-link" href="#Breathe" onclick= "hideNav()">Breathe</a>
+   <a class="nav-link" href="#Everything" onclick= "hideNav()">Everything</a>
+ </div>
+</nav>
+ 
+<main id="main-doc">
+     <section class="main-section" id="Intro">
+     <header><h2>Intro</h2></header>
+       <p>It's really not a secret that sometimes people feel down, or anxious, or depressed, or angry, or [insert unfun thing here]. Having bad times and experiencing emotions we'd rather not is a part of being human. I find it useful to have a toolkit of things I can go look at to make things a bit better during those times. <span class="highlight">I am not a mental health professional and I don't want to steer you wrong. There are lots of places or helplines that offer advice if you need help.</span> This is a list of a few things I find helpful. </p>
+  </section>
+   <section class="main-section" id="Movement">
+     <header><h2>Movement</h2></header>
+     <p>Physical activity. I feel confident that there are studies that support this, but it's here because I've found it realiably works for me. A few of my favourite activities:</p>
+     <ul>
+       <li>Dancing</li>
+       <li>Running</li>
+       <li>Walking</li>
+       <li>Yoga</li>
+       <li>Martial Arts</li>
+     </ul>
+  </section>
+   <section class="main-section" id="Music">
+    <header><h2>Music</h2></header>
+   <p> I find music to be one the things that can most quickly affect my mood. Here are a few different types of music that I like to listen to depending on what I need in that moment. I keep playlists of these types of music on Youtube and one my phone for easy access when I want to listen.</p>
+     <h3>Thankful</h3>
+    <p>I find this one to be preventative. Listening to people sing about how thankful they are for what they have inspires me. I say pair with dancing like a fool for maximum impact</p>
+    <p> I find a lot of songs that inspire thankfulness in me in soca. I'm loving <a href="https://youtu.be/9nV8_5SZFrI" target="_blank" title="Voice - Far From Finished">this song</a> and <a href="https://youtu.be/6phS5kT7jfk" target="_blank" title="Benjai | Phenomenal ">this one</a> and <a href="https://youtu.be/gY-2ifZpl8A"  target="_blank" title="Young Devyn - Feeling It "> this one</a> and <a href="https://youtu.be/-ujS73cehyY" target="_blank" title="Farmer Nappy - My House">this one</a> right now.</p> Also really love <a href="https://youtu.be/89AnqCZ8JtA" target="_blank" title="Can t Hold Us Lyrics Macklemore and Ryan Lewis">this one</a> in the non-soca sphere.
+    <h3>Sassy</h3>
+    <p>When I really just need to say "No way. I'm rising above X!", it can help to channel a bit of rebellion.</p>
+    <h3>Calming</h3>
+    <p>This is especially helpful if I'm feeling anxious.</p>
+    
+    <h3>Silly</h3>
+    <p> Sometimes you just need a laugh. For a funny story told in song, calypso's got some <a href="https://youtu.be/Zpb2sOz-k5U" target="_blank" title="Mighty Sparrow - A Slight Mistake">good ones.</a> </p>
+  </section>
+   <section class="main-section" id="Play">
+      <header>
+      <h2>Play</h2>
+    </header>
+    <p>I think it's important to make things fun when possible. If public transit is overwhelming, I've found a phone game to be a good distraction. So many things, play a board game, sing and dance like a fool (This is really one of my favourite things! REALLY!). Find something that feels like play. Something just for fun.</p>
+  </section>
+   <section class="main-section" id="People">
+      <header>
+      <h2>People</h2>
+    </header>
+     <p>When I feel down, I often don't want to see people, but sometimes texting someone, even just a smile helps me to turn a mood around.</p>
+     <p>If needed, reaching out for advice or just an ear from a helpline is also a good option.</p>
+  </section>
+   <section class="main-section" id="Breathe">
+     <header>
+      <h2>Breathe</h2>
+    </header>
+     <p>Take a breath.</p> 
+     <p>Take a few breaths.</p> 
+     <p>I find this can help to slow things down enough for me to calm down if I'm feeling stressed or, at least, remember that the situation might be worth looking at in a different way. I had fun <a href="https://medium.com/peoplelikeus/a-beautifully-simple-gif-tried-3-ways-5fef28ab2f70" target="_blank">creating some gifs</a> based on one shared on <a href="https://medium.freecodecamp.com/a-navy-seal-breathing-technique-you-can-use-to-keep-calm-when-coding-f05a66da8067" target="_blank">FreeCodeCamp's blog</a> and there are so many other helpful breathing coachers.</p>
+  </section>
+  <section class="main-section" id="Everything">
+     <header>
+      <h2>Everything</h2>
+    </header>
+    <h3> Combining</h3>
+    <p>Sometimes thing don't work like you'd hoped. Combining a few nice things can help.</p>
+    <pre><code>
+      if(music!= help){
+        try(music + movement);
+      }
+     </code></pre>
+    <h3> Looking to the situation</h3>
+    <p>The situation can also limit what can be done, but it's helpful to have a list of things that work for different situations.</p>
+    <pre><code>
+      if (inPublic == true){
+        try(breathe);
+        try(playingPhone);
+        try(peopleText);
+      }
+     </code></pre>
+    
+    <h3>Learning</h3>
+    <p>I think learning can come through trying random lovely things and with time focusing on what seems to work best in different situations. This:</p>
+    <pre><code>
+    try(lovelyArray[random]);
+    </code></pre>
+    <p>Becomes something like:</p>
+    <pre><code>
+    try(lovelyArray[2]);
+    </code></pre>
+    
+    <h3>Being OK</h3> 
+     <p>Let's be real. Sometimes, things still suck. Reach out for help if you need. If you don't need help, remember this phrase I like "A bad day is not a bad life". It's ok not to always be ok.</p>
+    
+    <pre><code> 
+    if(feelBetter == false){
+    return youreStillGood;
+    }
+    </code></pre>
+  </section>
+</main>
+<script>
+   document.getElementById("nav-hamburger").checked = true;
+  function hideNav() {
+  document.getElementById("nav-hamburger").checked = false;
+}
+</script>
+</body>
+</html>

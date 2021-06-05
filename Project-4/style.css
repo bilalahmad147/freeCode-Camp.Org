@@ -1,0 +1,142 @@
+body {
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  background: #ff5252;
+  font-family: "helvetica", "arial", sans-serif;
+}
+nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 30%;
+  max-width: 420px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background: #ff5252;
+  padding: 10px;
+  box-sizing: border-box;
+}
+nav-hamburger {
+  display: none;
+  /*
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    font-size: 1.5em;
+    font-weight: 900;
+    z-index: 4;*/
+}
+.button--hamburger {
+  display: none;
+  position: fixed;
+  right: 10px;
+  top: 10px;
+  font-size: 1.5em;
+  font-weight: 900;
+  z-index: 4;
+  /* background: #52FFA9;
+    padding: 2px;
+    border-radius: 5%;
+    */
+}
+.nav-link {
+  display: block;
+  padding: 10px;
+  margin: 10px;
+  background: #52ffa9;
+  color: inherit;
+  text-decoration: none;
+}
+.nav-link:hover {
+  background: #5252ff;
+  color: #52ffa9;
+}
+a {
+  color: #52ffa9;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+a:hover {
+  color: #5252ff;
+}
+.highlight {
+  background: #a9ff52;
+  font-weight: 600;
+}
+main {
+  position: absolute;
+  left: 30%;
+  top: 0%;
+  width: 70%;
+  max-width: 980px;
+  background: #ff8a80;
+}
+.main-section {
+  border: black 1px solid;
+  padding: 10px 20px;
+  box-sizing: border-box;
+}
+h2,
+h3 {
+  margin-bottom: 0px;
+}
+p {
+  margin-top: 0px;
+}
+
+code {
+  display: block;
+  background: #ffbebe;
+}
+@media (max-width: 800px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  .button--hamburger {
+    display: block;
+    /* align: left; */
+  }
+
+  nav {
+    position: fixed;
+    top: -175px;
+    height: 175px;
+    width: 100%;
+    max-width: 800px;
+    z-index: 2;
+    overflow: auto;
+    transition: top 0.5s;
+  }
+  .link-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    /*    display: flex;
+       flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: flex-start;*/
+    background: #ff5252;
+  }
+
+  .nav-link {
+    margin: 2px;
+  }
+
+  #nav-hamburger:checked ~ #navbar {
+    top: 0px;
+    transition: top 0.5s;
+  }
+
+  main {
+    left: 0px;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+  }
+}
